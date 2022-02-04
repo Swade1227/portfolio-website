@@ -50,9 +50,23 @@ a {
   width: fit-content;
   font-size: 4rem;
   position: relative;
-  color: white;
-  text-shadow: 3px 2px #4682b4;
+  color: transparent;
+  text-shadow: 3px 2px transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1.5s;
 }
+
+#hero h1 span {
+  background-color: #4682b4;
+  top: 0;
+  left: 0;
+  height: 100%;
+  animation: text_reveal_box 1s ease;
+  position: absolute;
+  width: 0;
+  animation-delay: 1s;
+}
+
 #hero .cta {
   display: inline-block;
   padding: 10px 30px;
@@ -65,7 +79,7 @@ a {
   letter-spacing: 0.1rem;
   margin-top: 36px;
   transition: 0.3s ease;
-  margin-left: 28.5%;
+  margin-left: 31%;
   transition-property: background-color, color;
 }
 
@@ -73,3 +87,27 @@ a {
   color: white;
   background-color: #4683b493;
 }
+
+/* End Hero Section */
+
+/* KeyFrame Section */
+
+@keyframes text_reveal_box {
+  50% {
+    width: 102%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+  100% {
+    color: white;
+    text-shadow: 2px 2px #4682b4;
+  }
+}
+
+/* End KeyFramee Section */
