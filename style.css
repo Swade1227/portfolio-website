@@ -30,6 +30,46 @@ a {
   background-size: cover;
   background-position: top center;
   position: relative;
+  z-index: 1;
 }
 
-/* End Hero Section */
+#hero::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-image: radial-gradient(transparent, black);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#hero h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: white;
+  text-shadow: 3px 2px #4682b4;
+}
+#hero .cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 2px solid #4682b4;
+  font-size: 2rem;
+  text-shadow: 2px 2px #4682b4;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 36px;
+  transition: 0.3s ease;
+  margin-left: 28.5%;
+  transition-property: background-color, color;
+}
+
+#hero .cta:hover {
+  color: white;
+  background-color: #4683b493;
+}
