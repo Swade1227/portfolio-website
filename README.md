@@ -1,5 +1,5 @@
 # Portfolio Website Project
 
-- fairly simple portfolio website
+- A fairly simple practice portfolio website
 - css / html / js
 - minimal use of js
