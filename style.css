@@ -56,12 +56,19 @@ a {
   animation-delay: 1.5s;
 }
 
+#hero .hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 50px;
+}
+
 #hero h1 span {
   background-color: #4682b4;
   top: 0;
   left: 0;
   height: 100%;
-  animation: text_reveal_box 1s ease;
+  animation: text_reveal_box 1s ease backwards;
   position: absolute;
   width: 0;
   animation-delay: 1s;
