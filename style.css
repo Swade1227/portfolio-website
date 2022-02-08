@@ -30,6 +30,12 @@ svg {
   object-fit: cover;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 p {
   font-size: 1.6rem;
   margin-top: 5px;
@@ -39,6 +45,22 @@ p {
   margin-bottom: 20px;
   color: black;
   text-align: center;
+}
+
+.section-title {
+  font-size: 6rem;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2 rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.section-title span {
+  color: #4682b4;
+  text-shadow: 2px 2px #1f5c8d;
 }
 
 /* Hero Section */
@@ -113,6 +135,8 @@ p {
   background-color: #4683b493;
 }
 
+/* End Hero Section */
+
 /* Services Section */
 
 #services .services {
@@ -121,22 +145,6 @@ p {
   max-width: 1300px;
   margin: 0 auto;
   padding: 100px 0;
-}
-
-#services .section-title {
-  font-size: 6rem;
-  color: black;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.2 rem;
-  text-align: center;
-  margin-bottom: 30px;
-  font-weight: 500;
-}
-
-#services .section-title span {
-  color: #4682b4;
-  text-shadow: 3px 0px #1f5c8d;
 }
 
 #services .service-bottom {
@@ -196,7 +204,102 @@ p {
 
 /* End Service Section */
 
-/* End Hero Section */
+/* Projects Section */
+
+#projects .projects {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#projects .projects-header h1 {
+  margin-bottom: 50px;
+}
+
+#project .all-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#projects .projects-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#projects .projects-info {
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(60deg, #3d729e 0%, #2c5170 100%);
+  background-color: #486378;
+  color: white;
+}
+
+#projects .section-title span {
+  color: #4682b4;
+  text-shadow: 2px 2px #1f5c8d;
+}
+
+#projects .projects-info h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+#projects .projects-info h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+#projects .projects-info p {
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+#projects .projects-img {
+  flex-basis: 50%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+#projects .projects-img::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #3d729e 0%, #2c5170 100%);
+  opacity: 0.2;
+}
+
+#projects .projects-img img {
+  transition: 0.3s ease transform;
+}
+
+#projects .projects-item:hover .projects-img img {
+  transform: scale(1.15);
+}
+
+/* End Projects Section */
 
 /* KeyFrame Section */
 
