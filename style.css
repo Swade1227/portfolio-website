@@ -9,7 +9,7 @@
 html {
   font-size: 10px;
   font-family: "Raleway", sans-serif;
-  background-image: radial-gradient(white 60%, rgba(124, 124, 124, 0.767) 100%);
+  /*background-image: radial-gradient(white 60%, rgba(124, 124, 124, 0.767) 100%);*/
 }
 
 a {
@@ -63,8 +63,28 @@ p {
   text-shadow: 2px 2px #1f5c8d;
 }
 
-/* Hero Section */
+.cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 2px solid #4682b4;
+  font-size: 2rem;
+  text-shadow: 2px 2px #4682b4;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 36px;
+  transition: 0.3s ease;
+  margin-left: 31%;
+  transition-property: background-color, color;
+}
 
+.cta:hover {
+  color: white;
+  background-color: #4683b493;
+}
+
+/* Hero Section */
 #hero {
   background-image: url(./imgs/mike-yukhtenko-wfh8dDlNFOk-unsplash.jpg);
   background-size: cover;
@@ -113,32 +133,9 @@ p {
   width: 0;
   animation-delay: 1s;
 }
-
-#hero .cta {
-  display: inline-block;
-  padding: 10px 30px;
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  border: 2px solid #4682b4;
-  font-size: 2rem;
-  text-shadow: 2px 2px #4682b4;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-top: 36px;
-  transition: 0.3s ease;
-  margin-left: 31%;
-  transition-property: background-color, color;
-}
-
-#hero .cta:hover {
-  color: white;
-  background-color: #4683b493;
-}
-
 /* End Hero Section */
 
 /* Services Section */
-
 #services .services {
   flex-direction: column;
   text-align: center;
@@ -201,11 +198,9 @@ p {
   margin-top: 20px;
   text-align: left;
 }
-
 /* End Service Section */
 
 /* Projects Section */
-
 #projects .projects {
   flex-direction: column;
   max-width: 1200px;
@@ -298,11 +293,78 @@ p {
 #projects .projects-item:hover .projects-img img {
   transform: scale(1.15);
 }
-
 /* End Projects Section */
 
-/* KeyFrame Section */
+/* About Me Section */
+#about .about {
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
 
+#about .col-left {
+  width: 250px;
+  height: 360px;
+}
+
+#about .col-right {
+  width: 100%;
+}
+
+#about .col-right h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+}
+
+#about .col-right p {
+  margin-bottom: 20px;
+}
+
+#about .cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #3079b4c7;
+  background-color: transparent;
+  border: 2px solid #0f324e;
+  font-size: 2rem;
+  text-shadow: 1px 1px #245d8b;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 36px;
+  transition: 0.3s ease;
+  margin-left: 0;
+  transition-property: background-color, color;
+  margin-bottom: 25px;
+}
+
+#about .cta:hover {
+  color: #2082d1c4;
+  background-color: #78afdd93;
+}
+
+#about .col-left .about-img {
+  position: relative;
+  border: 10px solid white;
+}
+
+#about .col-left .about-img::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 19px;
+  height: 98%;
+  width: 99%;
+  border: 7px solid #1f5c8d;
+  z-index: -1;
+}
+
+/* End About Me Section */
+
+/* KeyFrame Section */
 @keyframes text_reveal_box {
   50% {
     width: 102%;
@@ -320,5 +382,4 @@ p {
     text-shadow: 2px 2px #4682b4;
   }
 }
-
 /* End KeyFramee Section */
