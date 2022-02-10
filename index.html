@@ -8,12 +8,36 @@
     <title>My Website</title>
   </head>
   <body>
+    <!-- Header -->
+    <section id="testing"></section>
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero"><h1>Samuel Wade</h1></a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#testing" data-after="Home">Home</a></li>
+              <li><a href="#services" data-after="Services">Services</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
     <!-- Hero Section -->
     <section id="hero">
       <div class="hero container">
         <div>
           <h1>Hello, My Name Is Samuel <span></span></h1>
-          <a href="#" type="button" class="cta"> Portfolio </a>
+          <a href="#projects" type="button" class="cta"> Portfolio </a>
         </div>
       </div>
     </section>
@@ -423,7 +447,9 @@
             recusandae nisi quibusdam similique totam? Quisquam quis reiciendis
             officiis vitae consectetur!
           </p>
-          <a href="#" class="cta">Download Resume</a>
+          <a href="./Resume.pdf" class="cta" download="Resume.pdf"
+            >Download Resume</a
+          >
         </div>
       </div>
     </section>
@@ -466,22 +492,25 @@
         <h2>Your Complete Web Solution</h2>
         <div class="social-icon">
           <div class="social-item">
-            <a href="#">
+            <a href="https://www.facebook.com/sam.wade.9655" target="_blank">
               <img src="./imgs/icons8-facebook-384.png" alt="facebook icon" />
             </a>
           </div>
           <div class="social-item">
-            <a href="#">
+            <a href="https://github.com/Swade1227" target="_blank">
               <img src="./imgs/icons8-github-384 (1).png" alt="github icon" />
             </a>
           </div>
           <div class="social-item">
-            <a href="#">
+            <a href="https://www.instagram.com/samuelwade1227/" target="_blank">
               <img src="./imgs/icons8-instagram-384.png" alt="Instagram icon" />
             </a>
           </div>
           <div class="social-item">
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/samuel-wade-80608a1b7/"
+              target="_blank"
+            >
               <img src="./imgs/icons8-linkedin-384.png" alt="LinkedIn icon" />
             </a>
           </div>
@@ -490,5 +519,6 @@
       </div>
     </section>
     <!-- End Footer Section -->
+    <script src="./app.js"></script>
   </body>
 </html>
