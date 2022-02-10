@@ -361,8 +361,56 @@ p {
   border: 7px solid #1f5c8d;
   z-index: -1;
 }
-
 /* End About Me Section */
+
+/* Contact Section */
+#contact .contact {
+  flex-direction: column;
+  margin-top: 0;
+}
+
+#contact .contact-items {
+  width: 380px;
+  margin-right: 20px;
+}
+
+#contact .icon {
+  width: 125px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#contact .contact-item {
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 5px 0px rgba(26, 45, 61, 0.527);
+  flex-direction: column;
+  transition: 0.2s ease box-shadow;
+}
+
+#contact .contact-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+#contact .contact-item:hover {
+  box-shadow: 0px 0px 18px 0 rgba(36, 60, 80, 0.527);
+}
+
+/* End Contact Section */
 
 /* KeyFrame Section */
 @keyframes text_reveal_box {
