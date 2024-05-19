@@ -104,14 +104,10 @@
               <h1>Project 4</h1>
               <h2>Smart Rockets</h2>
               <p>
-                Simulates natural selection in a population of "rockets" who's "survival rating/fitness" (and their chance at reproducing) 
-                relies on getting as close as possible to a given target.  
-                Each rocket starts from the bottom of the window, and must attempt to reach a target without hitting an obstacle.
-                Each rocket is initialized with an array of 400 random motion vectors representing their "DNA".
-                The vectors or "DNA" are applied every frame until 400 frames have gone by or the rocket "crashes." 
-                The closer the rocket is at the end of each round, the higher the chance it has as "repopulating" which 
-                is represented by two Parent rocket DNA's being mixed half and half into a new Rocket object for the next round. 
-                There is also a small mutation chance, resulting in occasioinal random changes in some of the DNA.
+                Simulates natural selection in a population of "rockets" whose survival and reproduction 
+                depend on reaching a target while avoiding obstacles. Each rocket starts at the bottom and has 
+                400 frames to navigate using random motion vectors ("DNA"). The closer a rocket gets to the target, 
+                the higher its chance to reproduce by mixing DNA with another successful rocket, with a small chance of mutation.
               </p>
             </div>
             <div class="projects-img">
